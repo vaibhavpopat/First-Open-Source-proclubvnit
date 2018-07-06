@@ -27,6 +27,7 @@ int main(){
         scanf("%d",&option);
         switch(option)
         {
+             /*Read the matrices for each operation*/
             case ADDITION:
                             AddMatrices();
                             break;
