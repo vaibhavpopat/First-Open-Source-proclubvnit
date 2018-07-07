@@ -11,10 +11,13 @@
 #define ROWS 100
 #define COLS 100
 
-
+void PrintMatrix(int Matrix[][COLS])
+{
+    /*Print the given Matrix here to stdout*/
+}
 void ReadMatrix(int Matrix[][COLS])
 {
-    //Scan the matrix in this function
+    //Scan the matrix in this function from stdin(by default it is keyboard)
 }
 int main(){
     //Driver Code-Do not make changes here unless too necessary
