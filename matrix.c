@@ -14,20 +14,22 @@
 
 void ReadMatrix(int Matrix[][COLS])
 {
-
+    //Scan the matrix in this function
 }
 int main(){
+    //Driver Code-Do not make changes here unless too necessary
     int option,num;
-    printf("Enter the number of your choices\n");
+    printf("Enter the number of choices\n");
     scanf("%d",&num);
     while(num--)
     {
 
         printf("Enter your choice\n");
-        scanf("%d",&option);
+        scanf("%d",&option);//Assume a valid choice
         switch(option)
         {
-             /*Read the matrices for each operation*/
+             /*Read the required number of matrices in each function using ReadMatrix() only for each operation*/
+             /*Print the output using PrintMatrix() function only*/
             case ADDITION:
                             AddMatrices();
                             break;
@@ -44,15 +46,12 @@ int main(){
                             Determinant();
                             break;
             case POWER:
-                            Power();
+                            Power();//ask not only for matrix but also the power to which it should be raised
                             break;
         }
 
 
     }
 
-
-
-
-    return 0;
+    return 0;//Why do we do this?Any ideas? Do reply.
 }
