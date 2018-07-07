@@ -4,7 +4,7 @@
 #include <stdbool.h>
 #include <limits.h>
 #include <time.h>
-#include <asserts.h>
+#include <assert.h>
 /*
     What is a header file?
     What is its purpose?
