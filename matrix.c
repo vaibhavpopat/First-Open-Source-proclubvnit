@@ -20,15 +20,52 @@
 #define POWER 7
 #define ROWS 100
 #define COLS 100
+void PrintMatrix(int r,int c,int Matrix[][c])
+{ int i,j;
+  for(i=0;i<r;i++)
+   {for(j=0;j<c;j++)
+     {printf("%d ",Matrix[i][j]);
+      } 
+      printf("\n");
+    }
+    
+}
+void ReadMatrix(int r,int c,int Matrix[][c])
+{  int i,j;
+   for(i=0;i<r;i++)
+   {for(j=0;j<c;j++)
+     {scanf("%d",&Matrix[i][j]);
+      } 
+    }
+ }
+void MultMatrices()
+{  int r1,c1,r2,c2;
+//first matrix
+   scanf("%d %d",&r1,&c1);
+   int a[r1][c1];
+   ReadMatrix(r1,c1,a);
+  //second matrix
+  scanf("%d %d",&r2,&c2);
+   int b[r2][c2];
+   ReadMatrix(r2,c2,b);
+   if(c1!=r2)
+   printf("matrix multiplication not possible");
+   else
+   {int i,j,k;
+    int d[r1][c2];
+     for(i=0;i<r1;i++)
+     {for(j=0;j<c2;j++)
+        { d[i][j]=0;
+         for(k=0;k<c1;k++)
+         {d[i][j]+=a[i][k]*b[k][j];
+         }
+        } 
+     }
+     PrintMatrix(r1,c2,d);
+   }
+    
+}
 
-void PrintMatrix(int Matrix[][COLS])
-{
-    /*Print the given Matrix here to stdout*/
-}
-void ReadMatrix(int Matrix[][COLS])
-{
-    //Scan the matrix in this function from stdin(by default it is keyboard)
-}
 int main(){
     //Driver Code-Do not make changes here unless too necessary
     int option,num;
