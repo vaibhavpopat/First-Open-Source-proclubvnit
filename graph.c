@@ -6,10 +6,7 @@
 #include <assert.h>	
 #include <time.h>
 
-typedef struct graph{
-
-
-};
+dsdcdcdasv
 long ShortestPathLength(graph g, ...)
 {
 
